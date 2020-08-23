@@ -15,7 +15,7 @@ Variety of Pokemon Sword/Shield automation tools for Arduino Uno R3. Ideally, it
 #### USB to USB-C adapter (optional)
 
 
-#### Compiling and Flashing (OSX)
+### Compiling and Flashing (OSX)
 First, you will need to clone the repo. Since LUFA has been added as a git submodule, you will need the --recursive flag in order to clone this repo.
 
 ```
