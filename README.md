@@ -2,7 +2,7 @@
 
 Variety of Pokemon Sword/Shield automation tools for Arduino Uno R3. Ideally, it should work for Teensy 2.0++ as well, but I haven't tested on it. The tools are dependent on LUFA support.
 
-Requirements to run this tools
+### Requirements to run this tools:
 
 Nintendo Switch
 
