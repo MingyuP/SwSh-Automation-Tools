@@ -1,10 +1,15 @@
 all:
-	make -f infinitewatts.mk
+	make -f watts.mk
+	make -f lottery.mk
 
 
-infinitewatts:
-	make -f infinitewatts.mk
+watts:
+	make -f watts.mk
+
+lottery:
+	make -f lottery.mk
 
 
 clean:
-	make -f infinitewatts.mk clean
+	make -f watts.mk clean
+	make -f lottery.mk clean

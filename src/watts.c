@@ -49,24 +49,26 @@ typedef struct {
 } command; 
 
 static const command step[] = {
-	// Setup Time
-	{ NOTHING,  125 },
+	// Setup Time [0 - 4]
+    { NOTHING,   25 },
+    { TRIGGERS,   5 },
+    { NOTHING,   25 },
+    { TRIGGERS,   5 },
+    { NOTHING,   25 },
 
-	// Click the hole to get the watt
+	// Collect 2000 watts [5 - 8]
 	{ A,          5 },
-	{ NOTHING,   50 },
+	{ NOTHING,   25 },
 	{ A,          5 },
-	{ NOTHING,   50 },
-	{ A,          5 },
-	{ NOTHING,   125 },
+	{ NOTHING,   25 },
 
-	// Recruit players and wait
+	// Get in the hole [9 - 12]
 	{ A,          5 },
-	{ NOTHING,   50 },
-	{ A,          5 },
-	{ NOTHING,   100 },
+	{ NOTHING,   25 },
+	{ B,          5 },
+	{ NOTHING,   25 },
 
-	// Goto Home and get to settings
+	// Change date glitch [13 -]
 	{ HOME,       5 },
 	{ NOTHING,   20 },
 	{ DOWN,       5 },
@@ -124,11 +126,7 @@ static const command step[] = {
 	{ NOTHING,   20 },
 
 	{ A,          5 },
-	{ NOTHING,   40 },
-	{ B,          5 },
-	{ NOTHING,   40 },
-	{ A,          5 },
-	{ NOTHING,   40 },
+	{ NOTHING,   20 },
 };
 
 // Main entry point.
@@ -261,7 +259,7 @@ int ypos = 0;
 int bufindex = 0;
 int duration_count = 0;
 int portsval = 0;
-int day = 0;
+int day = 30;
 
 // Prepare the next report for the host.
 void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
@@ -398,7 +396,7 @@ void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
 				day++;
 				if (day == 32) {
 					day = 1;
-					bufindex = 6;
+					bufindex = 8;
 				} else {
 					bufindex = 0;
 				}
