@@ -32,6 +32,33 @@ Type the following commands on the terminal to flash the hex files.
 
 ```
 sudo dfu-programmer atmega16u2 erase
-sudo dfu-programmer atmega16u2 flash Joystick.hex
+sudo dfu-programmer atmega16u2 flash HEXFILE.hex
 sudo dfu-programmer atmega16u2 reset
 ```
+
+where HEXFILE.hex is the hexfile of your choice.
+
+### Infinite Watts (watts.hex)
+
+Use the [casual battle time skip glitch](https://www.youtube.com/watch?v=iC7ueXaAtY0) to enable the time skip.
+
+Forward your Switch's time to the first day of any month that has 31 days (for example, if today is August 23, 2020, FORWARD your switch's time to October 1, 2020).
+
+Walk to a den and throw an Wishing Piece in it.
+
+Stand in front of the den.
+
+Plug in the Arduino to the Switch.
+
+### Infinite Lotteries (lottery.hex)
+
+(optional) Collect some Pokemon from different trainers via Pokemon Home to increase the odds of winning the lottery.
+
+Use the [casual battle time skip glitch](https://www.youtube.com/watch?v=iC7ueXaAtY0) to enable the time skip.
+
+Forward your Switch's time to the first day of any month that has 31 days (for example, if today is August 23, 2020, FORWARD your switch's time to October 1, 2020).
+
+Go into a Pokecenter right and stand right in front of the computer.
+
+Plug in the Arduino to the Switch.
+
